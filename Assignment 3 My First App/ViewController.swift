@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var firstNumber = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,5 +16,12 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func pressNumber(_ sender: UIButton) {
+        if let number = sender.titleLabel?.text{
+            print(number)
+
+        }
+        
+    }
 }
 
